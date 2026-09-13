@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+    monospace;
+
+  /* ATYPICA® Brand Colors */
+  --color-atypica-black: #0e0e0a;
+  --color-atypica-night: #12130d;
+  --color-atypica-olive: #4a4e2c;
+  --color-atypica-cream: #ece9da;
+  --color-atypica-paper: #f5f1e8;
+  --color-atypica-lime: #ebe31f;
+  --color-atypica-acid: #d8ff3e;
+}
+
+html,
+body {
+  background-color: #ece9da;
+  color: #0e0e0a;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: #ebe31f;
+  color: #0e0e0a;
+}
+
+/* Outlined display type for editorial accents */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #ece9da;
+}
+
+/* Subtle grain texture for dark sections (8-12% opacity) */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
