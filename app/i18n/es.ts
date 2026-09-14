@@ -8,7 +8,7 @@ export const es = {
     bookCall: "Hablemos",
   },
   hero: {
-    badge: "Estudio de Branding — ARG",
+    badge: "Estudio de Branding",
     firstTitle: "No es",
     secondTitle: "para todos.",
     subtitle: "El error es el sistema.",

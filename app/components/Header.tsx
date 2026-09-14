@@ -139,7 +139,7 @@ export function Header() {
               <a
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="w-full sm:max-w-44 sm:w-auto sm:mx-0 px-5 py-2.5 rounded-full font-semibold text-center bg-atypica-olive text-atypica-cream"
+                className="sm:max-w-44 sm:w-auto sm:mx-0 mx-4 px-5 py-2.5 rounded-full font-semibold text-center bg-atypica-olive text-atypica-cream"
               >
                 {t.nav.bookCall}
               </a>

@@ -8,7 +8,7 @@ export const en = {
     bookCall: "Let's talk",
   },
   hero: {
-    badge: "Branding Studio — ARG",
+    badge: "Branding Studio",
     firstTitle: "Not for",
     secondTitle: "everyone.",
     subtitle: "Error is the system.",
